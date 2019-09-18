@@ -3,13 +3,13 @@ package com.example.firebaserealtimedatabase;
 public class Track {
     private String trackId;
     private String trackName;
-    private String trackRating;
+    private int trackRating;
 
-    public Track(String id, String trackname, int rating){
+    public Track(){
 
     }
 
-    public Track(String trackId, String trackName, String trackRating) {
+    public Track(String trackId, String trackName, int trackRating) {
         this.trackId = trackId;
         this.trackName = trackName;
         this.trackRating = trackRating;
@@ -23,7 +23,7 @@ public class Track {
         return trackName;
     }
 
-    public String getTrackRating() {
+    public int getTrackRating() {
         return trackRating;
     }
 }
